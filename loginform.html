@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Javascript Login Form Validation</title>
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="css/style.css"/>
+<!-- Include JS File Here -->
+<script src="js/login.js"></script>
+
+<link rel="stylesheet" href="newcssstyle.css" type="text/css">
+
+
+<script>
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "adityajha" && password == "adityajha11"){
+alert ("Login successfully");
+return false;
+}
+else{
+alert("You login wrong password");
+if( attempt == 0){
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+</script>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<h2>Javascript Login Form Validation</h2>
+<form id="form_id" name="myform">
+<label>User Name :</label>
+<input autocomplete="off" type="text" name="username" id="username"/>
+<label>Password :</label>
+<input autocomplete="off" type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+<span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : adityajha<br/>Password : adityajha11</b></span>
+</div>
+</div>
+</body>
+</html>

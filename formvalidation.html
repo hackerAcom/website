@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function validation(){
+        var user=document.getElementById('user.id').value;
+        if(user==""){
+            document.getElementById('message').innerHTML=" please enter user id";
+            return false;
+        }
+        
+        var email=document.getElementById('email.id').value;
+        if(email==""){
+            document.getElementById('email').innerHTML=" please enter email id";
+            return true;
+        }
+    }
+    </script>
+</head>
+<body>
+<form id="validation" onsubmit="return validation()">
+    <label for="user id">user-id:</label>
+    <input autocomplete="off" id ="user.id"type="text" maxlength="15" minlength="4" placeholder="user-id">
+    <span id="message"> </span><br><br>
+    <label  id="email.id" for="email-id">email-id:</label>
+    <input type="text" maxlength="40" minlength="20" placeholder="email-id">
+    <span id="email"></span><br><br>
+    <label for="phoneno">phoneno:</label>
+    <input type="number" maxlength="10" min="10" placeholder="phoneno">
+    <span></span><br><br>
+    <label for="password">password:</label>
+    <input type="password" maxlength="20" minlength="7" placeholder="password">
+    <span></span><br><br>
+    <input type="submit" >
+</form>
+
+</body>
+</html>
