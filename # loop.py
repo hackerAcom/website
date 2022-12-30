@@ -1,0 +1,13 @@
+# loop
+print("adityajha")
+print("adityajha")
+print("adityajha")
+print("adityajha")
+print("adityajha")
+print("adityajha")
+print("adityajha")
+print("adityajha")
+print("adityajha")
+print("adityajha")
+print("adityajha")
+print("adityajha")
