@@ -1,9 +1,9 @@
 @echo off
 :a
-start www.pornhub.com
-start www.pornhub.com
-start www.pornhub.com
-start www.pornhub.com
-start www.pornhub.com
-start www.pornhub.com
+start www.facbook.com
+start www.facebook.com
+start www.facebook.com
+start www.facebook.com
+start www.facebook.com
+start www.facebook.com
 goto :a
